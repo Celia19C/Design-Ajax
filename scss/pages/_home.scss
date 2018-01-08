@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	height:100vh;
+	width:100%;
+	grid-template-rows: 568px 376px 624px 128px;
+	// grid-template-columns: 1fr 1fr 1fr ;
+}
+//HERO-SECTION
+.hero-section {
+	// display: flex;
+  // justify-content: center;
+	text-align: center;
+	background-image: url(/images/cover.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family:$font2;
+	grid-row: span 1;
+}
+//MOBILE
+@media all and (min-width: 360px){
+	.hero-section{
+	height: 667px;
+	width: 100%;
+}
+}
+@media all and (min-width: 400px){
+	.hero-section{
+	height: 736px;width: 100%;
+}
+}
+@media all and (min-width: 900px){
+	.hero-section{
+	height: 768px;width: 100%;
+}
+}
+//TABLET
+@media all and (min-height: 1024px){
+	.hero-section{
+	height: 1024px;width: 100%;
+}
+}
+@media all and (min-height: 1366px){
+	.hero-section{
+	height: 1366px;width: 100%;
+}
+}
+.hero-text {
+ padding: 284px 15px 0px 15px;
+color: $colorWhite;
+}
+.hero-text h1 {
+font-size: 42px;
+font-weight: bold;
+line-height: 55px;
+text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+margin: 0;
+}
+@media all and (min-width: 900px){
+	.hero-text h1{
+	font-size: 100px;
+}
+}
+@media all and (min-height: 768px){
+	.hero-text h1{
+	font-size: 80px;
+}
+}
+.inhac {
+	margin: 0;
+	font-size: 16px;
+	padding-top: 10px;
+}
+.rectangle-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: $colorWhite;
+	display:block;
+	margin:auto;
+	margin-top:45px;
+}
+.ico-scroll-down {
+	padding-top: 16.5px;
+
+}
+
+//INSOMNIA-SECTION
+.insomnia-section {
+  height: 376px;
+  background-color: $colorWhite;
+	grid-row: 2/3;
+}
+.insomnia-tips {
+	color:$colorLightBlue;
+	font-family: $font;
+	font-size: 14px;
+	padding: 30px 215px 0 15px;
+}
+.looking-window {
+	margin: 0;
+	padding: 0 15px 0 15px;
+	font-family:$font2;
+	font-weight: bold;
+	line-height: 30px;
+}
+.looking-text {
+	line-height: 30px;
+}
+
+//REASONS-SECTION
+.reasons-section {
+	grid-row: 3/4;
+	background-color:$colorSuperLightBlue;
+}
+.reason-minititle {
+	font-size: 18px;
+	font-weight: bold;
+	font-family:$font2;
+}
+.rectangle-circle2 {
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	background-color: $colorWhite;
+	position: absolute;
+	margin-top: 481.5%;
+	margin-left: 43%;
+}
+.ico-arrow {
+	padding-top: 10px;
+  margin-left: 12.4px;
+}
