@@ -7,7 +7,7 @@ body {
 	display: grid;
 	height:100vh;
 	width:100%;
-	grid-template-rows: 568px 376px 624px 128px;
+	grid-template-rows: 100vh 1fr 1fr 128px;
 	// grid-template-columns: 1fr 1fr 1fr ;
 }
 //HERO-SECTION
@@ -21,34 +21,6 @@ body {
 	background-size: cover;
 	font-family:$font2;
 	grid-row: span 1;
-}
-//MOBILE
-@media all and (min-width: 360px){
-	.hero-section{
-	height: 667px;
-	width: 100%;
-}
-}
-@media all and (min-width: 400px){
-	.hero-section{
-	height: 736px;width: 100%;
-}
-}
-@media all and (min-width: 900px){
-	.hero-section{
-	height: 768px;width: 100%;
-}
-}
-//TABLET
-@media all and (min-height: 1024px){
-	.hero-section{
-	height: 1024px;width: 100%;
-}
-}
-@media all and (min-height: 1366px){
-	.hero-section{
-	height: 1366px;width: 100%;
-}
 }
 .hero-text {
  padding: 284px 15px 0px 15px;
