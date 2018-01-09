@@ -9,9 +9,18 @@
 	<title>Evaluación 3º Sprint</title>
 </head>
 <body>
-	<header>
-
-	</header>
+	<div class="real-menu">
+ <header>
+  <button class="button"><img src="images/ico-menu.svg" alt="menu"></button>
+ </header>
+ <nav class="menu-navigator">
+  <button class="menu-close" title="Close">X</button>
+  <ul class="menu">
+      <li class="item anonymous"><a href="" class="menu-link">Anonymous proxy</a></li>
+   <li class="item looking"><a href="" class="menu-lin">Looking through a window</a></li>
+   <li class="item reasons"><a href="" class="menu-lin">3 reasons to purchase</a></li>
+	 </ul>
+ </nav>
 	<section class="hero-section">
 			<div class="hero-text">
 				<h1>ANONYMOUS PROXY</h1>
@@ -23,40 +32,48 @@
 			</div>
 		</section>
 		<section class="insomnia-section">
-			<p class="insomnia-tips">Insomnia Tips</p>
-			<h1 class="looking-window">Looking Through A Window</h1>
-			<p class="looking-text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
-			<div class="button-go">
-				<h2 class="go-text">Go</h2>
+			<div class="insomnia-margins">
+				<p class="insomnia-tips">Insomnia Tips</p>
+				<h1 class="looking-window">Looking Through A Window</h1>
+				<p class="looking-text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+					<button class="go-button">Go</button>
 			</div>
 		</section>
 		<section class="reasons-section">
-				<h2 class="3reasons">3 Reasons To Purchase</h2>
-				<div class="reasons">
+					<div class="reasons-together">
+						<div class="reasons-title">
+							<h2 class="3reasons">3 Reasons To Purchase</h2>
+						</div>
 						<div class="reason1">
-							<p class="reason-minititle">Ut sed metus</p>
+							<h3 class="reason-minititle">Ut sed metus</h3>
 							<p>Lorem ipsum dolor sit amet, consecteur.</p>
 						</div>
 						<div class="reason2">
-							<p class="reason-minititle">Curabitur ac erat</p>
+							<h3 class="reason-minititle">Curabitur ac erat</h3>
 							<p>Mauris mattis urna quis lorem molestie.</p>
 						</div>
 						<div class="reason3">
-							<p class="reason-minititle">Morbi dictum</p>
+							<h3 class="reason-minititle">Morbi dictum</h3>
 							<p>Aliquam in dolor et dolor tincidunt.</p>
 						</div>
-				</div>
-				<div id="btn-more-reasons" class="btn-more-reasons">
-						<h2 class="txt-more-reasons">More reasons</h2>
-				 </div>
+						<div id="btn-more-reasons" class="btn-more-reasons">
+						<p class="txt-more-reasons">More reasons</p>
+					</div>
+</div>
 	</section>
-	<!-- <div class="rectangle-circle2">
-		<img src="images/ico-arrow.svg"
-     class="ico-arrow">
-	</div> -->
+
 	<footer class="footer">
-		<p class="copyright">&copy;2017</p>
-		<p>we <span class="heart">❤</span> components</p>
-	</footer>
+		<a href="index.html"><div class="rectangle-circle2">
+			<img src="images/ico-arrow.svg"
+	     class="ico-arrow">
+		</div></a>
+		<div class="footer-text">
+			<p class="copyright">&copy;2017</p>
+			<p>we <span class="heart">❤</span> components</p>
+		</div>
+		</footer>
+
+	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,13 +1,30 @@
+//FOOTER
+.rectangle-circle2 {
+	width: 45px;
+	height: 45px;
+	border-radius: 22.5px;
+	background-color: $colorWhite;
+	position: absolute;
+	left:50%;
+	top:0;
+	display:flex;
+	justify-content: center;
+	transform: translate(-50%,-50%);
+}
 .footer {
+	height: 128px;
 	font-family: $font;
 	font-size: 14px;
-	grid-row: 4/5;
+	position:relative;
+	display: flex;
+	justify-content: center;
 	background-color: $dark-color;
-	text-align: center;
 	color: $colorWhite;
 }
-.copyright {
-	margin-top: 60px;
+.footer-text {
+	text-align: center;
+	position:absolute;
+	margin-top: 38px;
 }
 .heart {
 	color:$colorRed;

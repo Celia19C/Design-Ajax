@@ -1,9 +1,73 @@
 header {
-	position:fixed;
-	display: flex;
-	left:0;
-	z-index: 100;
+	position: relative;
+	z-index: 1;
+}
+.button {
 	width: 44px;
 	height: 44px;
 	background-color: $colorBlue;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+.menu-trigger img {
+	margin: 0 auto;
+}
+.realmenu--menu-open::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+}
+.menu-navigator {
+	position: absolute;
+	width: 70%;
+	max-width: 350px;
+	height: 100%;
+	left: -400px;
+	top: 0;
+	background-color: $colorSuperLightBlue;
+	transition: left ease 0.8s;
+}
+.realmenu--menu-open .menu-navigator {
+	left: 0;
+	z-index: 10;
+}
+.menu-close {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	background: $bright-orange;
+	color: $colorWhite;
+	left: 100%;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+.menu {
+	margin-top: 44px;;
+	font-size: 16px;
+	font-family: $font;
+	list-style: none;
+padding-left: 0;
+text-align: left;
+
+}
+.item {
+border-top: 1px solid $colorLightBlue;
+display: flex;
+justify-content: center;
+
+}
+.reasons {
+border-bottom: 1px solid $colorLightBlue;
+}
+.item a{
+	text-decoration: none;
+	margin: 20px auto;
+	color: $colorGrey;
+
 }
