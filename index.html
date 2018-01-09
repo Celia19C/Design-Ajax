@@ -8,72 +8,75 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Evaluación 3º Sprint</title>
 </head>
-<body>
-	<div class="real-menu">
- <header>
-  <button class="button"><img src="images/ico-menu.svg" alt="menu"></button>
- </header>
- <nav class="menu-navigator">
-  <button class="menu-close" title="Close">X</button>
-  <ul class="menu">
-      <li class="item anonymous"><a href="" class="menu-link">Anonymous proxy</a></li>
-   <li class="item looking"><a href="" class="menu-lin">Looking through a window</a></li>
-   <li class="item reasons"><a href="" class="menu-lin">3 reasons to purchase</a></li>
-	 </ul>
- </nav>
-	<section class="hero-section">
+<body class="body">
+		<header>
+			<button class="button"><img src="images/ico-menu.svg" alt="menu"></button>
+		</header>
+		<nav class="menu-navigator">
+			<div class="container">
+				<div class="container-menu">
+					<button class="menu-close" title="Close">X</button>
+					<ul class="menu">
+						<li class="item anonymous"><a href="#anonymous" class="menu-link">Anonymous proxy</a></li>
+						<li class="item looking"><a href="#looking" class="menu-lin">Looking through a window</a></li>
+						<li class="item reasons"><a href="#reasons" class="menu-lin">3 reasons to purchase</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="hero-section" id="anonymous">
 			<div class="hero-text">
 				<h1>ANONYMOUS PROXY</h1>
-				<p class="inhac">In hac habitasse platea dictumst.</p>
+				<p class="inhac">In hac habitasse platea dictumst.</p> <a href="#looking">
 				<div class="rectangle-circle">
 					<img src="/images/ico-scroll-down.png"
 					class="ico-scroll-down">
-				</div>
+				</div></a>
 			</div>
 		</section>
-		<section class="insomnia-section">
+		<section class="insomnia-section" id="looking">
 			<div class="insomnia-margins">
 				<p class="insomnia-tips">Insomnia Tips</p>
 				<h1 class="looking-window">Looking Through A Window</h1>
 				<p class="looking-text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
-					<button class="go-button">Go</button>
+				<button class="go-button">Go</button>
 			</div>
 		</section>
-		<section class="reasons-section">
-						<div class="reasons-title">
-							<h2 class="3reasons">3 Reasons To Purchase</h2>
-						</div>
-<div class="reasons-together">
-						<div class="reason1">
-							<h3 class="reason-minititle">Ut sed metus</h3>
-							<p class="reason-text">Lorem ipsum dolor sit amet, consecteur.</p>
-						</div>
-						<div class="reason2">
-							<h3 class="reason-minititle">Curabitur ac erat</h3>
-							<p class="reason-text">Mauris mattis urna quis lorem molestie.</p>
-						</div>
-						<div class="reason3">
-							<h3 class="reason-minititle">Morbi dictum</h3>
-							<p class="reason-text">Aliquam in dolor et dolor tincidunt.</p>
-						</div>
-						</div>
-<div class="div-reasons reasons-together"></div>
-						<button id="btn-more-reasons" class="btn-more-reasons">More reasons</button>
+		<section class="reasons-section" id="reasons">
+			<div class="reasons-title">
+				<h2 class="3reasons">3 Reasons To Purchase</h2>
+			</div>
+			<div class="reasons-together">
+				<div class="reason1">
+					<h3 class="reason-minititle">Ut sed metus</h3>
+					<p class="reason-text">Lorem ipsum dolor sit amet, consecteur.</p>
+				</div>
+				<div class="reason2">
+					<h3 class="reason-minititle">Curabitur ac erat</h3>
+					<p class="reason-text">Mauris mattis urna quis lorem molestie.</p>
+				</div>
+				<div class="reason3">
+					<h3 class="reason-minititle">Morbi dictum</h3>
+					<p class="reason-text">Aliquam in dolor et dolor tincidunt.</p>
+				</div>
+			</div>
+			<div class="div-reasons reasons-together"></div>
+			<button id="btn-more-reasons" class="btn-more-reasons">More reasons</button>
 
-	</section>
+		</section>
 
-	<footer class="footer">
-		<a href="index.html"><div class="rectangle-circle2">
-			<img src="images/ico-arrow.svg"
-	     class="ico-arrow">
-		</div></a>
-		<div class="footer-text">
-			<p class="copyright">&copy;2017</p>
-			<p>we <span class="heart">❤</span> components</p>
-		</div>
+		<footer class="footer">
+			<a href="index.html"><div class="rectangle-circle2">
+				<img src="images/ico-arrow.svg"
+				class="ico-arrow">
+			</div></a>
+			<div class="footer-text">
+				<p class="copyright">&copy;2017</p>
+				<p>we <span class="heart">❤</span> components</p>
+			</div>
 		</footer>
 
-	</div>
+	<!-- </div> -->
 	<script src="js/main.js"></script>
 </body>
 </html>

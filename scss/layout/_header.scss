@@ -9,37 +9,40 @@ header {
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 50;
+	// z-index: 50;
 border:none;
 }
 .menu-trigger img {
 	margin: 0 auto;
 }
-.realmenu--menu-open::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 3;
-}
 .menu-navigator {
-	position: absolute;
-	width: 70%;
-	max-width: 350px;
-	height: 100vh;
-	left: -500px;
-	top: 0;
-	background-color: $colorSuperLightBlue;
-	transition:left ease 0.8s,
-background ease 1s .7s;
-z-index: 10;
+	position: fixed;
+	left:0;
+	top:0;
+z-index: 1;
+	background-color: rgba(0, 0, 0, 0);
+	//para que cambie el backgrround
+	transition: transform ease .7s, background ease .7s .5s;
+	//paea que se mueva hacia la izq y se esconda
+	transform: translateX(-150%);
+	.menu-open &{
+		transform:translateX(0);
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
 }
-.realmenu--menu-open .menu-navigator {
-	left: 0;
+.container {
+background: rgba (0, 0, 0, 0.5);
+margin: 0;
+width: 100%;
 }
-
+.container-menu {
+position: relative;
+height: 100vh;
+width: 276px;
+background: white;
+margin-top: -20px;
+}
 .menu-close {
 	position: absolute;
 	width: 44px;
@@ -52,26 +55,25 @@ z-index: 10;
 	border:none;
 }
 .menu {
-	margin-top: 44px;;
+	padding-top: 44px;
 	font-size: 16px;
 	font-family: $font;
 	list-style: none;
 padding-left: 0;
+}
+.item {
+border-top: 1px solid rgba(118, 203, 234, 0.3);
+display: flex;
+justify-content: center;
 text-align: left;
 
 }
-.item {
-border-top: 1px solid $colorLightBlue;
-display: flex;
-justify-content: center;
-
-}
 .reasons {
-border-bottom: 1px solid $colorLightBlue;
+border-bottom: 1px solid rgba(118, 203, 234, 0.3);
 }
 .item a{
 	text-decoration: none;
 	margin: 20px auto;
 	color: $colorGrey;
-
+display: block;
 }

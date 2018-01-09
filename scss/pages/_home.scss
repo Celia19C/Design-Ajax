@@ -7,8 +7,7 @@ body {
 	width:100%;
 }
 .real-menu {
-overflow-x: hidden;
-
+	overflow-x: hidden;
 }
 //HERO-SECTION
 .hero-section {
@@ -36,34 +35,6 @@ overflow-x: hidden;
 .inhac {
 	margin: 0;
 	font-size: 16px;
-
-}
-@media all and (min-width: 900px){
-	.hero-text h1{
-		font-size: 95px;
-	}
-	.hero-text{
-		width:730px;
-		padding-top: 20vh;
-	}
-	.inhac {
-		font-size: 24px;
-
-	}
-}
-@media all and (min-width: 768px){
-	.hero-text h1{
-		font-size: 80px;
-    margin-bottom: 15px;
-	}
-	.hero-text{
-		width:690px;
-		padding-top: 20vh;
-	}
-	.inhac {
-		font-size: 24px;
-
-	}
 }
 .rectangle-circle {
 	width: 45px;
@@ -108,7 +79,7 @@ overflow-x: hidden;
 .go-button{
 	width: 76px;
 	height: 45px;
-	font-family: 'Roboto';
+	font-family: $font;
 	font-size: 20px;
 	font-weight: 500;
 	font-style: normal;
@@ -120,34 +91,26 @@ overflow-x: hidden;
 	color: $bright-orange;
 	background-color: $colorWhite
 }
-@media all and (min-width: 768px){
-	.go-button {
-		width: 91px;
-	}
-}
+
 //REASONS-SECTION
 .reasons-section {
-text-align: center;
-background-color:$colorSuperLightBlue;
-width: 100%;
+	text-align: center;
+	background-color:$colorSuperLightBlue;
+	width: 100%;
 }
 .reasons-together {
-margin: 0 auto;
-width: 60%;
-// text-align: center;
+	margin: 0 auto;
+	width: 60%;
 }
 h2 {
-font-size: 24px;
-font-family: $font2;
-padding: 40px 0 20px 0;
-width: 100%;
+	font-size: 24px;
+	font-family: $font2;
+	padding: 40px 0 20px 0;
+	width: 100%;
 }
-
-
-.reason-text{
-font-family: $font;
-font-size: 18px;
-// width: 184px;
+.reason-text {
+	font-family: $font;
+	font-size: 18px;
 }
 .reason-minititle {
 	font-size: 18px;
@@ -156,39 +119,79 @@ font-size: 18px;
 }
 .btn-more-reasons {
 	width: 184px;
-  border-radius: 22.5px;
-  background-color: $bright-orange;
-height: 45px;
-border: none;
+	border-radius: 22.5px;
+	background-color: $bright-orange;
+	height: 45px;
+	border: none;
 	color: $colorWhite;
-margin: 60px auto;
-font-family: $font;
-font-size: 20px;
+	margin: 60px auto;
+	font-family: $font;
+	font-size: 20px;
 }
-.div-reasons {
 
-}
+//MEDIAQUERIES
 @media all and (min-width: 768px){
-
+	.hero-text h1{
+		font-size: 80px;
+		margin-bottom: 15px;
+	}
+	.hero-text{
+		width:690px;
+		padding-top: 20vh;
+	}
+	.inhac {
+		font-size: 24px;
+	}
+	.looking-text {
+		font-size: 20px;
+	}
+	.insomnia-margins{
+		margin-left: 39px;
+		margin-right: 39px;
+	}
+	.go-button {
+		width: 91px;
+	}
 	h2 {
-	margin: 0 auto;
-font-size:1.5em;
-text-align: center;
+		margin: 0 auto;
+		font-size:1.5em;
+		text-align: center;
 	}
 	.reason-minititle {
 		font-size: 24px;
 	}
 	.reasons-together {
-	margin: 0 auto;
-	width: 90%;
-}
+		margin: 0 auto;
+		width: 90%;
+	}
 	.btn-more-reasons {
 		margin: 60px auto;
 	}
 }
+@media all and (min-width: 900px){
+	.hero-text h1{
+		font-size: 95px;
+	}
+	.hero-text{
+		width:730px;
+		padding-top: 20vh;
+	}
+	.inhac {
+		font-size: 24px;
+	}
+	.looking-text {
+		font-size: 20px;
+	}
+	.insomnia-margins{
+		margin-left: 275px;
+		margin-right: 275px;
+	}
+	.go-button {
+		width: 160px;
+	}
+}
 @media all and (min-width: 1060px){
 	.reasons-together {
-	width: 80%;
-	grid-column-gap: 150px;
+		width: 80%;
 	}
 }
