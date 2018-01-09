@@ -247,6 +247,11 @@ body {
   width: 100%;
 }
 
+.reasons-together {
+  margin: 0 auto;
+  width: 60%;
+}
+
 h2 {
   font-size: 24px;
   font-family: "Roboto Slab", serif;
@@ -254,12 +259,7 @@ h2 {
   width: 100%;
 }
 
-.reasons-together {
-  margin: 0 auto;
-  width: 60%;
-}
-
-.reason1,.reason2,.reason3 {
+.reason-text {
   font-family: "Roboto", serif;
   font-size: 18px;
 }
@@ -329,6 +329,11 @@ h2 {
     font-size: 24px;
   }
 
+  .reasons-together {
+    margin: 0 auto;
+    width: 90%;
+  }
+
   .btn-more-reasons {
     margin: 60px auto;
   }
@@ -346,6 +351,13 @@ h2 {
 
   .inhac {
     font-size: 24px;
+  }
+}
+
+@media all and (min-width: 1060px) {
+  .reasons-together {
+    width: 80%;
+    grid-column-gap: 150px;
   }
 }
 

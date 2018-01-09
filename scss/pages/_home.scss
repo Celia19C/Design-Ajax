@@ -131,6 +131,11 @@ text-align: center;
 background-color:$colorSuperLightBlue;
 width: 100%;
 }
+.reasons-together {
+margin: 0 auto;
+width: 60%;
+// text-align: center;
+}
 h2 {
 font-size: 24px;
 font-family: $font2;
@@ -138,12 +143,8 @@ padding: 40px 0 20px 0;
 width: 100%;
 }
 
-.reasons-together {
-margin: 0 auto;;
-width: 60%;
-// text-align: center;
-}
-.reason1, .reason2, .reason3{
+
+.reason-text{
 font-family: $font;
 font-size: 18px;
 // width: 184px;
@@ -153,7 +154,6 @@ font-size: 18px;
 	font-weight: bold;
 	font-family:$font2;
 }
-// // //
 .btn-more-reasons {
 	width: 184px;
   border-radius: 22.5px;
@@ -165,15 +165,9 @@ margin: 60px auto;
 font-family: $font;
 font-size: 20px;
 }
-// // 	font-family: $font;
-// // 	font-size: 20px;
-// // 	font-weight: 500;
-// // 	font-style: normal;
-// // 	font-stretch: normal;
-// // 	line-height: 2.25;
-// // 	letter-spacing: normal;
+.div-reasons {
 
-// // }
+}
 @media all and (min-width: 768px){
 
 	h2 {
@@ -184,7 +178,17 @@ text-align: center;
 	.reason-minititle {
 		font-size: 24px;
 	}
+	.reasons-together {
+	margin: 0 auto;
+	width: 90%;
+}
 	.btn-more-reasons {
 		margin: 60px auto;
+	}
+}
+@media all and (min-width: 1060px){
+	.reasons-together {
+	width: 80%;
+	grid-column-gap: 150px;
 	}
 }

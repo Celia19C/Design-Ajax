@@ -1,24 +1,3 @@
-// .reasons-together {
-// 	display: grid;
-// width: 100%;
-// 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-// }
-// .reasons-title {
-// 	grid-row: 1 / 2;
-// }
-// .reason1{
-// 	grid-row: 2 / 3;
-// }
-// .reason2{
-// 	grid-row: 3 / 4;
-// }
-// .reason3{
-// 	grid-row: 4 / 5;
-// }
-// .btn-more-reasons  {
-// 	grid-row: 5 / 6;
-// }
-
 @media all and (min-width: 768px){
 	.reasons-together{
 display: grid;
