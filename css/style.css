@@ -250,12 +250,12 @@ body {
 h2 {
   font-size: 24px;
   font-family: "Roboto Slab", serif;
-  padding-bottom: 30px;
+  padding: 40px 0 20px 0;
   width: 100%;
 }
 
 .reasons-together {
-  margin: 0 69px;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -276,8 +276,7 @@ h2 {
   height: 45px;
   border: none;
   color: white;
-  margin: 0 auto;
-  margin-bottom: 15%;
+  margin: 60px auto;
   font-family: "Roboto", serif;
   font-size: 20px;
 }

@@ -56,7 +56,7 @@ fetch('https://three-random-reasons-izwfjpgbqm.now.sh')
     var listHTML = '';
 var newReasons = document.querySelector('.div-reasons');
     for (var i = 0; i < reasons.length; i++) {
-      listHTML += '<div class="reasons-together"> <h3>' + reasons[i].title + '</h3><p>'+reasons[i].description+ '</p></div>';
+      listHTML += '<div> <h3>' + reasons[i].title + '</h3><p>'+reasons[i].description+ '</p></div>';
     }
 
     newReasons.innerHTML += listHTML;

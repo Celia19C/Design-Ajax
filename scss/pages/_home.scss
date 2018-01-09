@@ -134,17 +134,18 @@ width: 100%;
 h2 {
 font-size: 24px;
 font-family: $font2;
-padding-bottom: 30px;
+padding: 40px 0 20px 0;
 width: 100%;
 }
 
 .reasons-together {
-margin: 0 69px;
+margin: 0 auto;;
 width: 100%;
 // text-align: center;
 }
 .reason1, .reason2, .reason3{
 font-size: $font;
+// width: 184px;
 }
 .reason-minititle {
 	font-size: 18px;
@@ -159,8 +160,7 @@ font-size: $font;
 height: 45px;
 border: none;
 	color: $colorWhite;
-margin: 0 auto;
-	margin-bottom: 15%;
+margin: 60px auto;
 font-family: $font;
 font-size: 20px;
 }
