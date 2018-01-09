@@ -10,6 +10,7 @@ header {
 	left: 0;
 	top: 0;
 	z-index: 50;
+border:none;
 }
 .menu-trigger img {
 	margin: 0 auto;
@@ -27,16 +28,18 @@ header {
 	position: absolute;
 	width: 70%;
 	max-width: 350px;
-	height: 100%;
-	left: -400px;
+	height: 100vh;
+	left: -500px;
 	top: 0;
 	background-color: $colorSuperLightBlue;
-	transition: left ease 0.8s;
+	transition:left ease 0.8s,
+background ease 1s .7s;
+z-index: 10;
 }
 .realmenu--menu-open .menu-navigator {
 	left: 0;
-	z-index: 10;
 }
+
 .menu-close {
 	position: absolute;
 	width: 44px;
@@ -46,6 +49,7 @@ header {
 	left: 100%;
 	cursor: pointer;
 	font-size: 1.2em;
+	border:none;
 }
 .menu {
 	margin-top: 44px;;

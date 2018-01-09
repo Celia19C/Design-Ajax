@@ -6,6 +6,10 @@ body {
 	padding: 0;
 	width:100%;
 }
+.real-menu {
+overflow-x: hidden;
+
+}
 //HERO-SECTION
 .hero-section {
 	width: 100%;
@@ -123,55 +127,63 @@ body {
 }
 //REASONS-SECTION
 .reasons-section {
+text-align: center;
+background-color:$colorSuperLightBlue;
 width: 100%;
-	background-color:$colorSuperLightBlue;
-	font-family: $font;
 }
-.reasons-together {
-margin: 0 auto;
+h2 {
+font-size: 24px;
+font-family: $font2;
+padding-bottom: 30px;
+width: 100%;
 }
 
+.reasons-together {
+margin: 0 69px;
+width: 100%;
+// text-align: center;
+}
+.reason1, .reason2, .reason3{
+font-size: $font;
+}
 .reason-minititle {
 	font-size: 18px;
 	font-weight: bold;
 	font-family:$font2;
 }
+// // //
 .btn-more-reasons {
-width: 184px;
-	height: 45px;
-	border-radius: 22.5px;
-	background-color: $bright-orange;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-
-}
-.btn-more-reasons p {
-	width: 133px;
-	height: 45px;
-	font-family: $font;
-	font-size: 20px;
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 2.25;
-	letter-spacing: normal;
-	text-align: center;
+	width: 184px;
+  border-radius: 22.5px;
+  background-color: $bright-orange;
+height: 45px;
+border: none;
 	color: $colorWhite;
+margin: 0 auto;
+	margin-bottom: 15%;
+font-family: $font;
+font-size: 20px;
 }
-@media all and (min-width: 768px){
-	.reasons-section{
-		font-size: 20px;
-	}
-	.reasons-together {
-	padding: 30px 30px;
-text-align: center;
-	}
-	.reason-minititle {
-		font-size: 24px;
-	}
-	.btn-more-reasons {
-		margin: 60px auto;
-	}
-}
+// // 	font-family: $font;
+// // 	font-size: 20px;
+// // 	font-weight: 500;
+// // 	font-style: normal;
+// // 	font-stretch: normal;
+// // 	line-height: 2.25;
+// // 	letter-spacing: normal;
+
+// // }
+// @media all and (min-width: 768px){
+//
+// 	.reasons-together {
+// 	margin: 0 auto;
+// font-size:1.5em;
+// text-align: center;
+// 	}
+// 	.reason-minititle {
+// 		font-size: 24px;
+// 	}
+// 	.btn-more-reasons {
+// 		margin: 60px auto;
+// 	}
+// }
