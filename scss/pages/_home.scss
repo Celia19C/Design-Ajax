@@ -140,11 +140,12 @@ width: 100%;
 
 .reasons-together {
 margin: 0 auto;;
-width: 100%;
+width: 60%;
 // text-align: center;
 }
 .reason1, .reason2, .reason3{
-font-size: $font;
+font-family: $font;
+font-size: 18px;
 // width: 184px;
 }
 .reason-minititle {
@@ -173,17 +174,17 @@ font-size: 20px;
 // // 	letter-spacing: normal;
 
 // // }
-// @media all and (min-width: 768px){
-//
-// 	.reasons-together {
-// 	margin: 0 auto;
-// font-size:1.5em;
-// text-align: center;
-// 	}
-// 	.reason-minititle {
-// 		font-size: 24px;
-// 	}
-// 	.btn-more-reasons {
-// 		margin: 60px auto;
-// 	}
-// }
+@media all and (min-width: 768px){
+
+	h2 {
+	margin: 0 auto;
+font-size:1.5em;
+text-align: center;
+	}
+	.reason-minititle {
+		font-size: 24px;
+	}
+	.btn-more-reasons {
+		margin: 60px auto;
+	}
+}

@@ -256,11 +256,12 @@ h2 {
 
 .reasons-together {
   margin: 0 auto;
-  width: 100%;
+  width: 60%;
 }
 
 .reason1,.reason2,.reason3 {
-  font-size: "Roboto", serif;
+  font-family: "Roboto", serif;
+  font-size: 18px;
 }
 
 .reason-minititle {
@@ -316,6 +317,20 @@ h2 {
 
   .go-button {
     width: 91px;
+  }
+
+  h2 {
+    margin: 0 auto;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .reason-minititle {
+    font-size: 24px;
+  }
+
+  .btn-more-reasons {
+    margin: 60px auto;
   }
 }
 
