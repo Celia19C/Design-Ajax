@@ -1,6 +1,81 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 
-@import url("https://fonts.googleapis.com/css?family=Roboto");/* Core *//* Components *//* Layout */.rectangle-circle2 {
+@import url("https://fonts.googleapis.com/css?family=Roboto");/* Core *//* Components */.button {
+  width: 44px;
+  height: 44px;
+  background-color: #0271bc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: none;
+}
+
+.menu-trigger img {
+  margin: 0 auto;
+}
+
+.menu-close {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background: #f26002;
+  color: white;
+  left: 100%;
+  cursor: pointer;
+  font-size: 1.2em;
+  border: none;
+}
+
+.rectangle-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+}
+
+.go-button {
+  width: 76px;
+  height: 45px;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border-radius: 22.5px;
+  border: solid 2px #f26002;
+  color: #f26002;
+  background-color: white;
+}
+
+.btn-more-reasons {
+  width: 184px;
+  border-radius: 22.5px;
+  background-color: #f26002;
+  height: 45px;
+  border: none;
+  color: white;
+  margin: 60px auto;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+}
+
+.rectangle-circle2 {
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
@@ -16,9 +91,7 @@
   justify-content: center;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.footer {
+}/* Layout */.footer {
   height: 128px;
   font-family: "Roboto", serif;
   font-size: 14px;
@@ -40,26 +113,12 @@
 }
 
 .heart {
-  color: red;
+  color: #f26002;
 }
 
 header {
   position: relative;
   z-index: 1;
-}
-
-.button {
-  width: 44px;
-  height: 44px;
-  background-color: #0271bc;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border: none;
-}
-
-.menu-trigger img {
-  margin: 0 auto;
 }
 
 .menu-navigator {
@@ -68,10 +127,10 @@ header {
   top: 0;
   z-index: 1;
   background-color: transparent;
-  -webkit-transition: background ease .7s .5s, -webkit-transform ease .7s;
-  transition: background ease .7s .5s, -webkit-transform ease .7s;
-  transition: transform ease .7s, background ease .7s .5s;
-  transition: transform ease .7s, background ease .7s .5s, -webkit-transform ease .7s;
+  -webkit-transition: background ease .5s, -webkit-transform ease 1s .4s;
+  transition: background ease .5s, -webkit-transform ease 1s .4s;
+  transition: transform ease 1s .4s, background ease .5s;
+  transition: transform ease 1s .4s, background ease .5s, -webkit-transform ease 1s .4s;
   -webkit-transform: translateX(-150%);
   transform: translateX(-150%);
 }
@@ -81,10 +140,14 @@ header {
   transform: translateX(0);
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background ease .8s .8s, -webkit-transform ease .8s;
+  transition: background ease .8s .8s, -webkit-transform ease .8s;
+  transition: transform ease .8s, background ease .8s .8s;
+  transition: transform ease .8s, background ease .8s .8s, -webkit-transform ease .8s;
 }
 
 .container {
-  background: rgba 0, 0, 0, 0.5;
+  background: transparent;
   margin: 0;
   width: 100%;
 }
@@ -95,18 +158,6 @@ header {
   width: 276px;
   background: #EFF0F2;
   margin-top: -20px;
-}
-
-.menu-close {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  background: #f26002;
-  color: white;
-  left: 100%;
-  cursor: pointer;
-  font-size: 1.2em;
-  border: none;
 }
 
 .menu {
@@ -165,7 +216,7 @@ body {
 }
 
 .hero-text {
-  padding-top: 50vh;
+  padding-top: 45vh;
   color: white;
   width: 290px;
   margin: 0 auto;
@@ -182,29 +233,7 @@ body {
   font-size: 16px;
 }
 
-.rectangle-circle {
-  width: 45px;
-  height: 45px;
-  border-radius: 22.5px;
-  background-color: white;
-  position: relative;
-  left: 50%;
-  margin-top: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transform: translatex(-50%);
-  transform: translatex(-50%);
-}
-
 .insomnia-section {
-  height: 376px;
   background-color: white;
 }
 
@@ -215,6 +244,7 @@ body {
 
 .insomnia-tips {
   color: #8ccbea;
+  font-weight: bold;
   font-family: "Roboto", serif;
   font-size: 14px;
   padding: 30px 0 0 0;
@@ -231,22 +261,6 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   color: grey;
-}
-
-.go-button {
-  width: 76px;
-  height: 45px;
-  font-family: "Roboto", serif;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: center;
-  border-radius: 22.5px;
-  border: solid 2px #f26002;
-  color: #f26002;
-  background-color: white;
 }
 
 .reasons-section {
@@ -278,19 +292,17 @@ h2 {
   font-family: "Roboto Slab", serif;
 }
 
-.btn-more-reasons {
-  width: 184px;
-  border-radius: 22.5px;
-  background-color: #f26002;
-  height: 45px;
-  border: none;
-  color: white;
-  margin: 60px auto;
-  font-family: "Roboto", serif;
-  font-size: 20px;
-}
-
 @media all and (min-width: 768px) {
+  .go-button {
+    width: 91px;
+    margin-bottom: 25px;
+  }
+
+  .btn-more-reasons {
+    margin: 60px auto;
+    margin-top: 40px;
+  }
+
   .reasons-together {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -332,10 +344,6 @@ h2 {
     margin-right: 39px;
   }
 
-  .go-button {
-    width: 91px;
-  }
-
   h2 {
     margin: 0 auto;
     font-size: 1.5em;
@@ -350,13 +358,13 @@ h2 {
     margin: 0 auto;
     width: 90%;
   }
-
-  .btn-more-reasons {
-    margin: 60px auto;
-  }
 }
 
 @media all and (min-width: 900px) {
+  .go-button {
+    width: 160px;
+  }
+
   .hero-text h1 {
     font-size: 95px;
   }
@@ -377,10 +385,6 @@ h2 {
   .insomnia-margins {
     margin-left: 275px;
     margin-right: 275px;
-  }
-
-  .go-button {
-    width: 160px;
   }
 }
 

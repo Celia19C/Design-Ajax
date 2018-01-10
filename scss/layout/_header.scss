@@ -2,78 +2,55 @@ header {
 	position: relative;
 	z-index: 1;
 }
-.button {
-	width: 44px;
-	height: 44px;
-	background-color: $colorBtnMenu;
-	position: absolute;
-	left: 0;
-	top: 0;
-	// z-index: 50;
-border:none;
-}
-.menu-trigger img {
-	margin: 0 auto;
-}
 .menu-navigator {
 	position: fixed;
 	left:0;
 	top:0;
-z-index: 1;
+	z-index: 1;
 	background-color: rgba(0, 0, 0, 0);
 	//para que cambie el backgrround
-	transition: transform ease .7s, background ease .7s .5s;
+	transition: transform ease 1s .4s, background ease .5s;
 	//paea que se mueva hacia la izq y se esconda
 	transform: translateX(-150%);
 	.menu-open &{
 		transform:translateX(0);
 		width: 100%;
 		background-color: rgba(0, 0, 0, 0.5);
+		transition: transform ease .8s, background ease .8s .8s;
 	}
 }
 .container {
-background: rgba (0, 0, 0, 0.5);
-margin: 0;
-width: 100%;
+	background: rgba(0, 0, 0, 0);
+	margin: 0;
+	width: 100%;
 }
 .container-menu {
-position: relative;
-height: 100vh;
-width: 276px;
-background: $colorMenu;
-margin-top: -20px;
-}
-.menu-close {
-	position: absolute;
-	width: 44px;
-	height: 44px;
-	background: $colorButtons;
-	color: $colorSection2;
-	left: 100%;
-	cursor: pointer;
-	font-size: 1.2em;
-	border:none;
+	position: relative;
+	height: 100vh;
+	width: 276px;
+	background: $colorMenu;
+	margin-top: -20px;
 }
 .menu {
 	padding-top: 44px;
 	font-size: 16px;
 	font-family: $font;
 	list-style: none;
-padding-left: 0;
+	padding-left: 0;
 }
 .item {
-border-top: 1px solid rgba(118, 203, 234, 0.3);
-display: flex;
-justify-content: center;
-text-align: left;
+	border-top: 1px solid rgba(118, 203, 234, 0.3);
+	display: flex;
+	justify-content: center;
+	text-align: left;
 
 }
 .reasons {
-border-bottom: 1px solid rgba(118, 203, 234, 0.3);
+	border-bottom: 1px solid rgba(118, 203, 234, 0.3);
 }
 .item a{
 	text-decoration: none;
 	margin: 20px auto;
 	color: $colorLetterSec;
-display: block;
+	display: block;
 }
