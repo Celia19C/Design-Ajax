@@ -23,7 +23,7 @@ body {
 }
 .hero-text {
 	padding-top: 50vh;
-	color: $colorWhite;
+	color: $colorSection2;
 	width:290px;
 	margin: 0 auto;
 }
@@ -40,7 +40,7 @@ body {
 	width: 45px;
 	height: 45px;
 	border-radius: 22.5px;
-	background-color: $colorWhite;
+	background-color: $colorSection2;
 	position: relative;
 	left:50%;
 	margin-top: 45px;
@@ -53,7 +53,7 @@ body {
 //INSOMNIA-SECTION
 .insomnia-section {
 	height: 376px;
-	background-color: $colorWhite;
+	background-color: $colorSection2;
 }
 .insomnia-margins {
 	margin-left: 4%;
@@ -87,9 +87,9 @@ body {
 	letter-spacing: normal;
 	text-align: center;
 	border-radius: 22.5px;
-	border: solid 2px $bright-orange;
-	color: $bright-orange;
-	background-color: $colorWhite
+	border: solid 2px $colorButtons;
+	color: $colorButtons;
+	background-color: $colorSection2
 }
 
 //REASONS-SECTION
@@ -120,10 +120,10 @@ h2 {
 .btn-more-reasons {
 	width: 184px;
 	border-radius: 22.5px;
-	background-color: $bright-orange;
+	background-color: $colorButtons;
 	height: 45px;
 	border: none;
-	color: $colorWhite;
+	color: $colorSection2;
 	margin: 60px auto;
 	font-family: $font;
 	font-size: 20px;

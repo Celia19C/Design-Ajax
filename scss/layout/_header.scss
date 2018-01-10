@@ -5,7 +5,7 @@ header {
 .button {
 	width: 44px;
 	height: 44px;
-	background-color: $colorBlue;
+	background-color: $colorBtnMenu;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -40,15 +40,15 @@ width: 100%;
 position: relative;
 height: 100vh;
 width: 276px;
-background: white;
+background: $colorMenu;
 margin-top: -20px;
 }
 .menu-close {
 	position: absolute;
 	width: 44px;
 	height: 44px;
-	background: $bright-orange;
-	color: $colorWhite;
+	background: $brightButtons;
+	color: $colorSection2;
 	left: 100%;
 	cursor: pointer;
 	font-size: 1.2em;

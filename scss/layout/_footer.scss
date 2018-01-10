@@ -3,7 +3,7 @@
 	width: 45px;
 	height: 45px;
 	border-radius: 22.5px;
-	background-color: $colorWhite;
+	background-color: $colorSection2;
 	position: absolute;
 	left:50%;
 	top:0;
@@ -18,8 +18,8 @@
 	position:relative;
 	display: flex;
 	justify-content: center;
-	background-color: $dark-color;
-	color: $colorWhite;
+	background-color: $colorFooter;
+	color: $colorSection2;
 }
 .footer-text {
 	text-align: center;
@@ -27,5 +27,5 @@
 	margin-top: 38px;
 }
 .heart {
-	color:$colorRed;
+	color:$colorHeart;
 }
