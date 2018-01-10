@@ -8,14 +8,15 @@ header {
 	top:0;
 	z-index: 1;
 	background-color: rgba(0, 0, 0, 0);
-	//para que cambie el backgrround
+	//para que cambie el backgrround. SALIDA
 	transition: transform ease 1s .4s, background ease .5s;
-	//paea que se mueva hacia la izq y se esconda
+	//para que se mueva hacia la izq el menú y se esconda
 	transform: translateX(-150%);
 	.menu-open &{
 		transform:translateX(0);
 		width: 100%;
 		background-color: rgba(0, 0, 0, 0.5);
+	//ENTRADA
 		transition: transform ease .8s, background ease .8s .8s;
 	}
 }
@@ -29,21 +30,19 @@ header {
 	height: 100vh;
 	width: 276px;
 	background: $colorMenu;
-	margin-top: -20px;
+	margin-top: -16px;
 }
 .menu {
 	padding-top: 44px;
 	font-size: 16px;
 	font-family: $font;
 	list-style: none;
-	padding-left: 0;
+	padding-left:0;
 }
 .item {
 	border-top: 1px solid rgba(118, 203, 234, 0.3);
-	display: flex;
-	justify-content: center;
 	text-align: left;
-
+	padding-left: 25px;
 }
 .reasons {
 	border-bottom: 1px solid rgba(118, 203, 234, 0.3);
