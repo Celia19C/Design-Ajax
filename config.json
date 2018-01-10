@@ -9,6 +9,6 @@
 		],
 		"dest": "js/"
 	},
-	"images": "images/cover.{gif,jpg,png,svg}",
+	"images": "images/**/*.{gif,jpg,png,svg}",
 	"html": "**/*.html"
 }
