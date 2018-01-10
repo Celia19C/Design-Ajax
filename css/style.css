@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 
 @import url("https://fonts.googleapis.com/css?family=Roboto");/* Core *//* Components */.button {
+  position: absolute;
   width: 44px;
   height: 44px;
   background-color: #0271bc;
-  position: absolute;
   left: 0;
   top: 0;
   border: none;
@@ -31,15 +31,15 @@
   height: 45px;
   border-radius: 22.5px;
   background-color: white;
-  position: relative;
   left: 50%;
-  margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+  margin-top: 45px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -80,15 +80,15 @@
   height: 45px;
   border-radius: 22.5px;
   background-color: white;
-  position: absolute;
   left: 50%;
-  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }/* Layout */.footer {
@@ -246,9 +246,9 @@ body {
 }
 
 .looking-window {
+  line-height: 30px;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
-  line-height: 30px;
 }
 
 .looking-text {
@@ -283,8 +283,8 @@ h2 {
 
 .reason-minititle {
   font-size: 18px;
-  font-weight: bold;
   font-family: "Roboto Slab", serif;
+  font-weight: bold;
 }
 
 @media all and (min-width: 768px) {

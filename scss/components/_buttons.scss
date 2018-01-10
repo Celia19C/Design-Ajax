@@ -1,9 +1,7 @@
 //BOTONES HEADER
 .button {
-	width: 44px;
-	height: 44px;
+	@include btnHeader();
 	background-color: $colorBtnMenu;
-	position: absolute;
 	left: 0;
 	top: 0;
 	border:none;
@@ -12,9 +10,7 @@
 	margin: 0 auto;
 }
 .menu-close {
-	position: absolute;
-	width: 44px;
-	height: 44px;
+	@include btnHeader();
 	background: $colorButtons;
 	color: $colorSection2;
 	left: 100%;
@@ -25,15 +21,9 @@
 
 //BOTÓN COVER
 .rectangle-circle {
-	width: 45px;
-	height: 45px;
-	border-radius: 22.5px;
-	background-color: $colorSection2;
+	@include btnUpDown ();
 	position: relative;
-	left:50%;
 	margin-top: 45px;
-	display:flex;
-	justify-content: center;
 	align-items: center;
 	transform: translatex(-50%);
 }
@@ -70,15 +60,9 @@
 
 //BOTÓN FOOTER
 .rectangle-circle2 {
-	width: 45px;
-	height: 45px;
-	border-radius: 22.5px;
-	background-color: $colorSection2;
+	@include btnUpDown ();
 	position: absolute;
-	left:50%;
 	top:0;
-	display:flex;
-	justify-content: center;
 	transform: translate(-50%,-50%);
 }
 
