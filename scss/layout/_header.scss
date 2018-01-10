@@ -47,7 +47,7 @@ margin-top: -20px;
 	position: absolute;
 	width: 44px;
 	height: 44px;
-	background: $brightButtons;
+	background: $colorButtons;
 	color: $colorSection2;
 	left: 100%;
 	cursor: pointer;
@@ -74,6 +74,6 @@ border-bottom: 1px solid rgba(118, 203, 234, 0.3);
 .item a{
 	text-decoration: none;
 	margin: 20px auto;
-	color: $colorGrey;
+	color: $colorLetterSec;
 display: block;
 }
