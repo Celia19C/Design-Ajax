@@ -1,1 +1,5 @@
-# Código boilerplate del ejercicio de evaluación del sprint 3 del curso front-end de Adalab
+
+Página web de acuerdo a un diseño
+CSS Grid
+Interacciones usando JS y transiciones
+Petición AJAX
